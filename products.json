@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Banana",
+        "price": 1,
+        "imageUrl": "https://prodimage.images-bn.com/pimages/9781727333718_p0_v1_s550x406.jpg" 
+    },
+    {
+        "id": 2,
+        "name": "Apple",
+        "price": 2,
+        "imageUrl": "http://images.hellokids.com/_uploads/_tiny_galerie/20120416/2gr_how-to-draw-an-apple-for-kids-tutorial-drawing.jpg" 
+    },
+    {
+        "id": 3,
+        "name": "Chocolate",
+        "price": 10,
+        "imageUrl": "http://images.hellokids.com/_uploads/_tiny_galerie/20130312/m64_how-to-draw-chocolate--chocolate-tutorial-drawing.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "Milk",
+        "price": 0.5,
+        "imageUrl": "https://i.pinimg.com/originals/f2/b8/71/f2b871bb92cb3ef33b55ae72a5444e65.jpg" 
+    },
+    {
+        "id": 5,
+        "name": "Pear",
+        "price": 3,
+        "imageUrl": "https://i.pinimg.com/originals/f0/49/dd/f049ddd5972f6571793bf336af9fd5de.jpg" 
+    }
+]
