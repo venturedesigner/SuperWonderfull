@@ -34,11 +34,10 @@ Here is the [Vue Guide](https://vuejs.org/v2/guide/) in case you need it
 The vue app will consist on the following components:
 
 - App.vue will be the Parent Component of the App
-- ProductComponent will display the information of **ONE** given product 
-- ProductListComponent will display a card for all given products
-- CartComponent will store how much items are added to cart and whats the total value of those items
-- SearchBarComponent [BONUS] will have an input and a button, when something is introduced or the button is clicked, it will filter the products that show
-
+- ProductCard will display the information of ONE given product
+- ProductList will display a card for all given products
+- Cart will store how much items are added to cart and whats the total value of those items
+- SearchBar [BONUS] will have an input and a button, when something is introduced or the button is clicked, it will filter the products that show
 
 ```
 /src
