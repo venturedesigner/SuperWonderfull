@@ -25,7 +25,7 @@ Please, push every file needed to make your app properly on GitHub before creati
 
 ## Introduction
 
-This project will consist on creating a **Mr Superwornderful** a supermarked based on mr Wonderful branding.
+This project will consist on creating a **Mr Superwornderful**, a supermarket based on Rr Wonderful branding.
 
 Here is the [Vue Guide](https://vuejs.org/v2/guide/) in case you need it
 
