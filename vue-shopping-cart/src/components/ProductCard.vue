@@ -1,9 +1,17 @@
 <template>
   <div class="productCard">
-    <p>{{product.name}}</p>
-    <h2>{{product.price + ' €'}}</h2>
-    <img :src="product.imageUrl" alt="">
-    <button @click="addToCart">Add to cart</button>
+    <div class="productImage">
+      <img :src="product.imageUrl" alt="">
+    </div>
+    <div>
+      <div class="productInfo">
+        <h2>{{product.name + ' ' + product.price + ' €'}}</h2>
+      </div>
+      <div>
+        <button class="btn-green" @click="addToCart">Add to cart</button>
+      </div>
+
+    </div>
   </div>
 </template>
 
@@ -28,11 +36,21 @@ export default {
 
 <style scoped>
 .productCard {
-  width:300px;
-  height:300px;
+  width: 240px;
+  height: 90px;
+  display: flex;
+  flex-direction:row;
+  margin: 30px;
+}
+.productInfo{
+  margin: 15px;
 }
 img {
-  width:180px;
-  height:180px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+h2 {
+  font-size:18px;
 }
 </style>

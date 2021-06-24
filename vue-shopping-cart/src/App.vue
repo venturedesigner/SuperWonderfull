@@ -2,7 +2,7 @@
   <div id="app">
     <div id="productListContainer">
       <ProductList 
-        :products= "Products" 
+        :products= "filteredProducts" 
         @addToCart="addToCart"
       />
     </div>
@@ -24,6 +24,7 @@ export default {
   name: 'App',
   data() {
     return {
+      Search: '',
       Products: ProductsData,
       UserProducts: []
     }
@@ -31,6 +32,15 @@ export default {
   components: {
     ProductList,
     Cart
+  },
+  computed: {
+    filteredProducts () {
+      return this.Products.filter( p => {
+        const name = p.name.toLowerCase()
+        const searchTerm = this.Search.toLowerCase() 
+        return name.includes(searchTerm)
+      } )
+    }
   },
   methods: {
     clearCart() {
@@ -46,18 +56,42 @@ export default {
         this.UserProducts.push(product)
       }
     }
+  },
+  mounted() {
+    this.$root.$on("searchLookup", (SearchTerm) => {
+      this.Search = SearchTerm
+    })
   }
 }
 </script>
 
 <style>
 #productListContainer {
-  width:60%;
+  width:70%;
   display:inline-block;
 }
 #CartContainer {
   width:30%;
   display:inline-block;
   position:fixed;
+}
+.btn-green {
+  margin: 20px;
+  background-color: #2fb02f;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 12px;
+  color: white;
+}
+.btn-blue {
+  margin: 20px;
+  background-color: #2f58b0;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 12px;
+  color: white;
+}
+body {
+  margin: 0px;
 }
 </style>

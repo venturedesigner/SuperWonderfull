@@ -1,5 +1,31 @@
 <template>
-  <div>
+<div>
+  <table>
+
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+
+    <tr v-for="(product, idx) in userproducts" :key="idx">
+      <td>{{product.name}} </td>
+      <td> {{product.quantity}} </td>
+      <td> {{product.price*product.quantity}} </td>
+    </tr>
+
+    <tr>
+      <th>Total</th>
+      <th></th>
+      <th>{{getTotal}}</th>
+    </tr>
+
+  </table>
+
+  <button class="btn-blue" @click="clearCart">Clear cart</button>
+</div>
+
+  <!-- <div>
     <ul>
       <li>
         Product  ||   Quantity   ||   Price
@@ -14,7 +40,7 @@
     
     <button @click="clearCart">Clear cart</button>
 
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -46,5 +72,19 @@ export default {
 </script>
 
 <style scoped>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid #f2deff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2deff;
+}
 </style>
