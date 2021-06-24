@@ -9,13 +9,13 @@
         "id": 2,
         "name": "Apple",
         "price": 2,
-        "imageUrl": "http://images.hellokids.com/_uploads/_tiny_galerie/20120416/2gr_how-to-draw-an-apple-for-kids-tutorial-drawing.jpg" 
+        "imageUrl": "https://images.hellokids.com/_uploads/_tiny_galerie/20120416/2gr_how-to-draw-an-apple-for-kids-tutorial-drawing.jpg" 
     },
     {
         "id": 3,
         "name": "Chocolate",
         "price": 10,
-        "imageUrl": "http://images.hellokids.com/_uploads/_tiny_galerie/20130312/m64_how-to-draw-chocolate--chocolate-tutorial-drawing.jpg" 
+        "imageUrl": "https://images.hellokids.com/_uploads/_tiny_galerie/20130312/m64_how-to-draw-chocolate--chocolate-tutorial-drawing.jpg" 
     },
     {
         "id": 4,
