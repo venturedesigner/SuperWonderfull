@@ -3,6 +3,7 @@
     <ProductCard 
       v-for="(product, idx) in products" :key="idx"
       :product= product
+      @addToCart="addToCart"
     />
   </div>
 </template>
@@ -20,6 +21,12 @@ export default {
   },
   components: {
     ProductCard
+  },
+  methods: {
+    addToCart(product) {
+      console.log('--> padre', product)
+      this.$emit("addToCart", product)
+    }
   }
 }
 

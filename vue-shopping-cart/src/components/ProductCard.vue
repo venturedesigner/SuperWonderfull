@@ -3,6 +3,7 @@
     <p>{{product.name}}</p>
     <h2>{{product.price + ' €'}}</h2>
     <img :src="product.imageUrl" alt="">
+    <button @click="addToCart">Add to cart</button>
   </div>
 </template>
 
@@ -16,6 +17,11 @@ export default {
       type: Object
     }
   },
+  methods: {
+    addToCart() {
+      this.$emit("addToCart", this.product)
+    }
+  }
 }
 
 </script>
