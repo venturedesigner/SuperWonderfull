@@ -37,6 +37,5 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width:80%;
 }
 </style>

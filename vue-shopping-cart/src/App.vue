@@ -1,12 +1,16 @@
 <template>
   <div id="app">
-    <ProductList 
-      :products= "Products" 
-      @addToCart="addToCart"
-    />
-    <Cart
-      :userproducts="UserProducts"
-    />
+    <div id="productListContainer">
+      <ProductList 
+        :products= "Products" 
+        @addToCart="addToCart"
+      />
+    </div>
+    <div id="CartContainer">
+      <Cart
+        :userproducts="UserProducts"
+      />
+    </div>
   </div>
 </template>
 
@@ -20,15 +24,7 @@ export default {
   data() {
     return {
       Products: ProductsData,
-      UserProducts: [
-    //     {
-    //     "id": 1,
-    //     "name": "Banana",
-    //     "price": 1,
-    //     "imageUrl": "https://prodimage.images-bn.com/pimages/9781727333718_p0_v1_s550x406.jpg", 
-    //     "quantity": 3
-    // }
-      ]
+      UserProducts: []
     }
   },
   components: {
@@ -52,5 +48,13 @@ export default {
 </script>
 
 <style>
-
+#productListContainer {
+  width:60%;
+  display:inline-block;
+}
+#CartContainer {
+  width:30%;
+  display:inline-block;
+  position:fixed;
+}
 </style>
