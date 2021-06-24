@@ -25,7 +25,7 @@ Please, push every file needed to make your app properly on GitHub before creati
 
 ## Introduction
 
-This project will consist on creating a **Mr Superwornderful**, a supermarket based on Rr Wonderful branding.
+This project will consist on creating a **Mr Superwornderful**, a supermarket based on Mr Wonderful branding.
 
 Here is the [Vue Guide](https://vuejs.org/v2/guide/) in case you need it
 
@@ -37,7 +37,7 @@ The vue app will consist on the following components:
 - ProductCard will display the information of ONE given product
 - ProductList will display a card for all given products
 - Cart will store how much items are added to cart and whats the total value of those items
-- SearchBar [BONUS] will have an input and a button, when something is introduced or the button is clicked, it will filter the products that show
+- SearchBar will have an input and a button, when something is introduced or the button is clicked, it will filter the products that show
 
 ```
 /src
