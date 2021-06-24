@@ -9,6 +9,7 @@
     <div id="CartContainer">
       <Cart
         :userproducts="UserProducts"
+        @clearCart="clearCart"
       />
     </div>
   </div>
@@ -32,7 +33,9 @@ export default {
     Cart
   },
   methods: {
-
+    clearCart() {
+      this.UserProducts = []
+    },
     addToCart(product) {
       console.log('--> Abuelo' ,product, )
       if (this.UserProducts.filter(p => p.id === product.id).length > 0) {

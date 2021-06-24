@@ -12,6 +12,8 @@
         Total Price: {{getTotal}}
     </p>
     
+    <button @click="clearCart">Clear cart</button>
+
   </div>
 </template>
 
@@ -32,6 +34,11 @@ export default {
         total += elem.price*elem.quantity
       })
       return total
+    }
+  },
+  methods: {
+    clearCart() {
+      this.$emit("clearCart")
     }
   }
 }
